@@ -11,9 +11,19 @@ describe("CounterComponent",()=>{
     it("se debe crear el componente counter",()=>{
         const fixture=TestBed.createComponent(CounterComponent)
 
-    expect(fixture.componentInstance).toBeTruthy
+    expect(fixture.componentInstance).toBeTruthy()
+    
+    })
 
+    it("se debe crear el texto Contador: 23 ",()=>{
+        const fixture=TestBed.createComponent(CounterComponent)
+        
+        // para verificar si cambia algo luego de hacer click
+        fixture.detectChanges()
 
+        const compiled: HTMLElement=fixture.nativeElement
+       
+        expect(compiled.querySelector("h1")?.textContent).toEqual("Contador: 23 ")
     })
 
     it(
