@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap%27');
+
+
+*{
+    margin: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+button{
+    width:3rem;
+    border: none;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+

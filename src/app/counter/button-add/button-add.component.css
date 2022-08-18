@@ -1,0 +1,9 @@
+button{
+    background-color: lime;
+
+}
+
+button:hover{
+    background-color: rgb(5, 187, 5);
+    color:snow;
+}
